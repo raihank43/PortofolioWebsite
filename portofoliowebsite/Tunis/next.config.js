@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  optimizeFonts: false,
+  // optimizeFonts: false,
   reactStrictMode: true,
   webpack: (config, { isServer }) => {
     if (!isServer) {
