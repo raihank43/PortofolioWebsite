@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Modal from "react-modal";
 import heroImgMobile from "../../../public/assets/img/hero/img-mobile.jpg";
 import cancelImg from "../../../public/assets/img/cancel.svg";
@@ -10,10 +10,9 @@ const heroContent = {
   heroMobileImage: heroImgMobile,
   heroTitleName: "Raden Raihan Kusuma",
   heroDesignation: "Fullstack Javascript Developer",
-  heroDescriptions: `I'm a fullstack developer mainly focused on Javascript with
-  experience crafting a clean system & user‑friendly web and mobile applications, I am passionate about
-  building excellent software that improves the lives of those
-  around me.`,
+  heroDescriptions: `I'm a transitioned fullstack-developer mainly focused on Javascript with
+  experience on crafting a clean system & user‑friendly web and mobile applications. I am passionate about
+  building excellent software that not only looks good but also function very well.`,
   heroBtn: "more about me",
 };
 
@@ -22,6 +21,30 @@ const Hero = () => {
   function toggleModalOne() {
     setIsOpen(!isOpen);
   }
+  const [titleName, setTitleName] = useState("");
+  const [designation, setDesignation] = useState("");
+  const fullTitleName = `I'm ${heroContent.heroTitleName}.`;
+  const fullDesignation = `${heroContent.heroDesignation}`;
+
+  useEffect(() => {
+    let timer1 = setTimeout(() => {
+      setTitleName(fullTitleName.slice(0, titleName.length + 1));
+    }, 100); // adjust delay here
+
+    // cleanup function
+    return () => clearTimeout(timer1);
+  }, [titleName, fullTitleName]);
+
+  useEffect(() => {
+    if (titleName.length === fullTitleName.length) {
+      let timer2 = setTimeout(() => {
+        setDesignation(fullDesignation.slice(0, designation.length + 1));
+      }, 100); // adjust delay here
+
+      // cleanup function
+      return () => clearTimeout(timer2);
+    }
+  }, [designation, fullDesignation, titleName, fullTitleName]);
 
   return (
     <>
@@ -42,12 +65,14 @@ const Hero = () => {
               className="text-uppercase poppins-font"
               style={{ fontSize: "2.1rem", color: "#3a3caf" }}
             >
-              {"I'm"} {heroContent.heroTitleName}.
+              {titleName}
               <span style={{ fontSize: "1.8rem" }}>
-                {heroContent.heroDesignation}
+                {titleName.length === fullTitleName.length ? designation : ""}
               </span>
             </h1>
-            <p className="open-sans-font"style={{ fontSize: "1rem",  }}>{heroContent.heroDescriptions}</p>
+            <p className="open-sans-font" style={{ fontSize: "1rem" }}>
+              {heroContent.heroDescriptions}
+            </p>
             <button className="button" onClick={toggleModalOne}>
               <span className="button-text">{heroContent.heroBtn}</span>
               <span className="button-icon fa fa-arrow-right"></span>
