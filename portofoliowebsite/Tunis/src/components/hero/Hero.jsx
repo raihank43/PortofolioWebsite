@@ -6,7 +6,7 @@ import AboutMain from "../about";
 import Image from "next/image";
 
 const heroContent = {
-  heroImage: "/assets/img/hero/dark.jpg",
+  heroImage: "/assets/img/hero/RaihanProfile.jpg",
   heroMobileImage: heroImgMobile,
   heroTitleName: "Raden Raihan Kusuma",
   heroDesignation: "Fullstack Javascript Developer",
@@ -38,7 +38,12 @@ const Hero = () => {
               alt="hero man"
               // style={{width:'100%',height:'100%'}}
             />
-            <h1 className="text-uppercase poppins-font">
+            <p className="text-green-500 tw-text-6xl">asdasda</p>
+            <h1
+              className="text-uppercase poppins-font"
+              style={{fontSize:'2.5rem', color:'#fff'}}
+      
+            >
               {"I'm"} {heroContent.heroTitleName}.
               <span>{heroContent.heroDesignation}</span>
             </h1>

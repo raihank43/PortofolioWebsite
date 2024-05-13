@@ -3,6 +3,8 @@ import { useEffect } from 'react';
 import '../styles/index.scss';
 import dynamic from 'next/dynamic'
 import ContextProvider from '../Context/ContextProvider';
+import '../styles/style.css'
+
 
 const AnimatedCursor = dynamic(() => import('react-animated-cursor'), {
   ssr: false
