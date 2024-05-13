@@ -6,12 +6,12 @@ import AboutMain from "../about";
 import Image from "next/image";
 
 const heroContent = {
-  heroImage: "/assets/img/hero/dark.jpg",
+  heroImage: "/assets/img/hero/RaihanProfile.jpg",
   heroMobileImage: heroImgMobile,
   heroTitleName: "Raden Raihan Kusuma",
   heroDesignation: "Fullstack Javascript Developer",
-  heroDescriptions: `I'm a Tunisian based web designer & front‑end developer focused on
-  crafting clean & user‑friendly experiences, I am passionate about
+  heroDescriptions: `I'm a fullstack developer mainly focused on Javascript with
+  experience crafting a clean system & user‑friendly web and mobile applications, I am passionate about
   building excellent software that improves the lives of those
   around me.`,
   heroBtn: "more about me",
@@ -38,11 +38,16 @@ const Hero = () => {
               alt="hero man"
               // style={{width:'100%',height:'100%'}}
             />
-            <h1 className="text-uppercase poppins-font">
+            <h1
+              className="text-uppercase poppins-font"
+              style={{ fontSize: "2.1rem", color: "#3a3caf" }}
+            >
               {"I'm"} {heroContent.heroTitleName}.
-              <span>{heroContent.heroDesignation}</span>
+              <span style={{ fontSize: "1.8rem" }}>
+                {heroContent.heroDesignation}
+              </span>
             </h1>
-            <p className="open-sans-font">{heroContent.heroDescriptions}</p>
+            <p className="open-sans-font"style={{ fontSize: "1rem",  }}>{heroContent.heroDescriptions}</p>
             <button className="button" onClick={toggleModalOne}>
               <span className="button-text">{heroContent.heroBtn}</span>
               <span className="button-icon fa fa-arrow-right"></span>
