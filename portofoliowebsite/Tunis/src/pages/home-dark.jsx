@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Tab, TabList, TabPanel, Tabs } from "react-tabs";
 import Hero from "../components/hero/Hero";
 import AboutMain from "../components/about";
@@ -19,7 +19,8 @@ const menuItem = [
   { icon: "fa-comments", menuName: "Blog" },
 ];
 
-const HomeDark = () => {
+export default function HomeDark() {
+  const [tabIndex, setTabIndex] = useState(0);
   useEffect(() => {
     document.querySelector("body").classList.remove("rtl");
   }, []);
@@ -30,7 +31,7 @@ const HomeDark = () => {
       <div className="yellow">
         <SwitchDark />
         {/* End Switcher */}
-        <Tabs>
+        <Tabs selectedIndex={tabIndex} onSelect={(index) => setTabIndex(index)}>
           <div className="header">
             <TabList className=" icon-menu  revealator-slideup revealator-once revealator-delay1">
               {menuItem.map((item, i) => (
@@ -52,7 +53,7 @@ const HomeDark = () => {
                 data-aos-duration="1200"
               >
                 <div className="color-block d-none d-lg-block"></div>
-                <Hero />
+                <Hero setTabIndex={setTabIndex} />
               </div>
             </TabPanel>
             {/* Hero Content Ends */}
@@ -166,6 +167,4 @@ const HomeDark = () => {
       </div>
     </Wrapper>
   );
-};
-
-export default HomeDark;
+}

@@ -16,7 +16,7 @@ const heroContent = {
   heroBtn: "more about me",
 };
 
-const Hero = () => {
+const Hero = ({ setTabIndex }) => {
   const [isOpen, setIsOpen] = useState(false);
   function toggleModalOne() {
     setIsOpen(!isOpen);
@@ -73,10 +73,16 @@ const Hero = () => {
             <p className="open-sans-font" style={{ fontSize: "1rem" }}>
               {heroContent.heroDescriptions}
             </p>
-            <button className="button" onClick={toggleModalOne}>
-              <span className="button-text">{heroContent.heroBtn}</span>
-              <span className="button-icon fa fa-arrow-right"></span>
-            </button>
+            <div className="d-flex gap-3">
+              <button className="button" onClick={toggleModalOne}>
+                <span className="button-text">{heroContent.heroBtn}</span>
+                <span className="button-icon fa fa-arrow-right"></span>
+              </button>
+              <button className="button" onClick={() => setTabIndex(3)}>
+                <span className="button-text">Hire Me</span>
+                <span className="button-icon fa fa-arrow-right"></span>
+              </button>
+            </div>
           </div>
         </div>
       </div>

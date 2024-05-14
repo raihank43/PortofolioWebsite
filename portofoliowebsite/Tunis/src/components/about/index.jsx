@@ -11,7 +11,7 @@ import Image from "next/image";
 const index = () => {
   return (
     <section className="main-content ">
-      <div className="container">
+      <div className="container" style={{padding: "1.5rem"}}>
         <div className="row">
           {/* Personal Info Starts */}
 
