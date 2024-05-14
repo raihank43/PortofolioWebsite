@@ -2097,3 +2097,12 @@ button:focus {
 .light .green {
   color: #2bc42b;
 }
+
+
+.glow-on-hover {
+  transition: box-shadow .3s ease-in-out;
+}
+
+.glow-on-hover:hover {
+  box-shadow: 0 0 10px #6466c5; /* adjust color as needed */
+}

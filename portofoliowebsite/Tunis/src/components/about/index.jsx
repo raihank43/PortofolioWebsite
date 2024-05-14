@@ -11,7 +11,7 @@ import Image from "next/image";
 const index = () => {
   return (
     <section className="main-content ">
-      <div className="container" style={{padding: "1.5rem"}}>
+      <div className="container" style={{ padding: "1.5rem" }}>
         <div className="row">
           {/* Personal Info Starts */}
 
@@ -62,7 +62,10 @@ const index = () => {
         {/* Skills Starts */}
         <div className="row">
           <div className="col-12">
-            <h3 className="text-uppercase pb-4 pb-sm-5 mb-3 mb-sm-0 text-start text-sm-center custom-title ft-wt-600">
+            <h3
+              className="text-uppercase pb-4 pb-sm-5 mb-3 mb-sm-0 text-start text-sm-center custom-title ft-wt-600"
+              style={{ fontSize: "3rem" }}
+            >
               My Skills
             </h3>
           </div>
