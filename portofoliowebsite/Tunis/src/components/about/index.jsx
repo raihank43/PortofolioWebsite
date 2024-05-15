@@ -7,6 +7,7 @@ import Skills from "./Skills";
 const cv = "/assets/cv/cv.pdf";
 import heroImgMobile from "../../../public/assets/img/hero/img-mobile.jpg";
 import Image from "next/image";
+import Social from "../Social";
 
 const index = () => {
   return (
@@ -37,6 +38,61 @@ const index = () => {
                 <PersonalInfo />
               </div>
               {/* End personal info */}
+
+              {/* Social media */}
+
+              <div className=" flex gap-3 mt-1 items-center  pl-3  ">
+                <h3 className=" text-uppercase custom-title mb-0 ft-wt-600 text-2xl">
+                  Follow and Contact Me
+                </h3>
+                <div className=" reset flex items-center justify-center ">
+                  <ul className="reset  social list-unstyled pt-1 mb-5 d-flex items-center justify-center gap-3 ">
+                    <li>
+                      <a
+                        href="https://www.linkedin.com/in/raden-raihan-kusuma-9a37b8249/"
+                        target="_blank"
+                        rel="noreferrer"
+                        className="custom-link"
+                      >
+                        <i className="fa fa-linkedin-square"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://github.com/raihank43"
+                        target="_blank"
+                        rel="noreferrer"
+                        className="custom-link"
+                      >
+                        <i className="fa fa-github-square"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://instagram.com/raihank43"
+                        target="_blank"
+                        rel="noreferrer"
+                        className="custom-link"
+                      >
+                        <i className="fa fa-instagram"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://wa.me/6285664532658"
+                        target="_blank"
+                        rel="noreferrer"
+                        className="custom-link"
+                      >
+                        <i className="fa fa-whatsapp"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+
+                
+              </div>
+              {/* End social media */}
 
               <div className="col-12 mt-1">
                 <a className="button" href={cv} download>
