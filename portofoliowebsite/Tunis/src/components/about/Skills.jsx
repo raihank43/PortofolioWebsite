@@ -210,11 +210,11 @@ const Skills = () => {
       {skillsContent.map((val, i) => (
         <>
           {val.type === "programming_language" && (
-            <div className="col-6 col-md-6 mb-3 mb-sm-5 " key={i}>
+            <div className="col-6 col-md-6 mb-3 mb-sm-5" key={i}>
               <div className="d-flex flex-column justify-content-center align-items-center">
                 <img
                   src={val.imgUrl}
-                  className="img-fluid rounded-circle w-50"
+                  className="img-fluid rounded-circle w-50 shadow-2xl glow-on-hover"
                 />
                 <div className="slice">
                   <div className="bar"></div>
@@ -241,7 +241,7 @@ const Skills = () => {
               <div className="d-flex flex-column justify-content-center align-items-center">
                 <img
                   src={val.imgUrl}
-                  className="img-fluid rounded-circle w-50"
+                  className="img-fluid rounded-circle w-50 glow-on-hover"
                 />
                 <div className="slice">
                   <div className="bar"></div>
@@ -268,7 +268,7 @@ const Skills = () => {
               <div className="d-flex flex-column justify-content-center align-items-center">
                 <img
                   src={val.imgUrl}
-                  className="img-fluid rounded-circle w-50"
+                  className="img-fluid rounded-circle w-50 glow-on-hover"
                 />
                 <div className="slice">
                   <div className="bar"></div>
@@ -295,7 +295,7 @@ const Skills = () => {
               <div className="d-flex flex-column justify-content-center align-items-center">
                 <img
                   src={val.imgUrl}
-                  className="img-fluid rounded-circle w-50"
+                  className="img-fluid rounded-circle w-50  glow-on-hover"
                 />
                 <div className="slice">
                   <div className="bar"></div>
@@ -322,7 +322,7 @@ const Skills = () => {
               <div className="d-flex flex-column justify-content-center align-items-center">
                 <img
                   src={val.imgUrl}
-                  className="img-fluid rounded-circle w-50"
+                  className="img-fluid rounded-circle w-50  glow-on-hover"
                 />
                 <div className="slice">
                   <div className="bar"></div>
@@ -349,7 +349,7 @@ const Skills = () => {
               <div className="d-flex flex-column justify-content-center align-items-center">
                 <img
                   src={val.imgUrl}
-                  className="img-fluid rounded-circle w-50"
+                  className="img-fluid rounded-circle w-50  glow-on-hover"
                 />
                 <div className="slice">
                   <div className="bar"></div>
