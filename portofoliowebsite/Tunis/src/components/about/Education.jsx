@@ -2,7 +2,7 @@ import React from "react";
 
 const educationContent = [
   {
-    year: "2024",
+    year: "2024 - 2024",
     degree: "Fullstack Javascript Immersive Program",
     institute: "Hacktiv8 Indonesia",
     details: `  The Full Stack JavaScript Immersive program from Hacktiv8 
@@ -38,7 +38,7 @@ const Education = () => {
       {educationContent.map((val, i) => (
         <li key={i}>
           <div className="icon">
-            <i className="fa fa-briefcase"></i>
+            <i className="fa fa-university"></i>
           </div>
           <span className="time open-sans-font text-uppercase">{val.year}</span>
           <h5 className="poppins-font text-uppercase">
