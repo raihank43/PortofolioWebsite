@@ -2247,3 +2247,36 @@ button:focus {
 .glow-on-hover:hover {
   box-shadow: 0 0 50px #3490dc;
 }
+
+
+.scrollable-modal {
+  overflow: auto;
+  max-height: 650px; /* adjust as needed */
+  scroll-behavior: smooth;
+}
+
+.h-screen {
+  height: 100vh;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.text-blue-600 {
+  --tw-text-opacity: 1;
+  color: rgb(37 99 235 / var(--tw-text-opacity));
+}
+
+.text-blue-200 {
+  --tw-text-opacity: 1;
+  color: rgb(191 219 254 / var(--tw-text-opacity));
+}
+
+.mt-6 {
+  margin-top: 1.5rem/* 24px */;
+}
+
+.text-justify {
+  text-align: justify;
+}

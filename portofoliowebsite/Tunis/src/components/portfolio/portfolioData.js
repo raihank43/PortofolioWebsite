@@ -1,4 +1,4 @@
-import Image1 from "../../../public/assets/img/portfolio/project-1.jpg";
+import Image1 from "../../../public/assets/img/portfolio/Timesheet/screenshot1.png";
 import Image2 from "../../../public/assets/img/portfolio/project-2.jpg";
 import Image3 from "../../../public/assets/img/portfolio/project-3.jpg";
 import Image4 from "../../../public/assets/img/portfolio/project-4.jpg";
@@ -11,17 +11,32 @@ import Image9 from "../../../public/assets/img/portfolio/project-9.jpg";
 const PortfolioData = [
   {
     id: 1,
-    type: "mockup project",
+    type: "Timesheet Management App",
     image: Image1,
-    tag: ["mockup"],
+    tag: ["web"],
     delayAnimation: "0",
     modalDetails: [
       {
         project: "Website",
-        client: "Envato",
-        language: "HTML, CSS, Javascript",
-        preview: "www.envato.com",
-        link: "https://www.envato.com/",
+        client: "Happy Homes",
+        language:
+          "Express.js, Supabase(PostgreSQL), Next.js, Sequelize ORM, JoyUI",
+        preview: "Here",
+        deploy: "Here",
+        link: "https://github.com/raihank43/timesheet-app",
+        deployLink: "https://timesheet-hh.vercel.app/",
+        description: `This is a tool designed to track the activities of
+        freelancers. It allows you to add employees, set their
+        hourly rates in Indonesian Rupiah, and record their
+        activities with details such as activity title,
+        project name, start date, end date, start time, end
+        time, duration, and total hours. Then it can calculate
+        the total income based on the employee’s rate per
+        hour. It features the most comprehensive data
+        management functionality such as multiple selection
+        filtering, sorting, searching, pagination and it can
+        also export the employee activities data and total
+        income to excel.`,
       },
     ],
   },

@@ -1,16 +1,16 @@
 // external
-import Image from 'next/image';
-import React from 'react';
+import Image from "next/image";
+import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 // internal
 import CloseImg from "../../../../../public/assets/img/cancel.svg";
-import PortfolioData from '../../portfolioData';
+import PortfolioData from "../../portfolioData";
 import img1 from "../../../../../public/assets/img/portfolio/project-1.jpg";
 import img2 from "../../../../../public/assets/img/portfolio/project-2.jpg";
 
-const ModalThree = ({modalId,setGetModal}) => {
+const ModalThree = ({ modalId, setGetModal }) => {
   let settings = {
     dots: true,
     infinite: true,
@@ -21,10 +21,8 @@ const ModalThree = ({modalId,setGetModal}) => {
   };
   return (
     <div className="modal_portfolio">
-        <div
-          className="modal__outside"
-          onClick={() => setGetModal(false)}
-        ></div>
+      <div className="modal__outside" onClick={() => setGetModal(false)}></div>
+      <div className="modal-wrapper">
         <div className="modal__content">
           {PortfolioData.filter((item) => item.id === modalId).map((item) => {
             //
@@ -97,6 +95,7 @@ const ModalThree = ({modalId,setGetModal}) => {
           })}
         </div>
       </div>
+    </div>
   );
 };
 
