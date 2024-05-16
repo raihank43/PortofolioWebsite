@@ -1,5 +1,5 @@
 import Image1 from "../../../public/assets/img/portfolio/Timesheet/screenshot1.png";
-import Image2 from "../../../public/assets/img/portfolio/project-2.jpg";
+import Image2 from "../../../public/assets/img/portfolio/DigiDagang/screenshot1.png";
 import Image3 from "../../../public/assets/img/portfolio/project-3.jpg";
 import Image4 from "../../../public/assets/img/portfolio/project-4.jpg";
 import Image5 from "../../../public/assets/img/portfolio/project-5.jpg";
@@ -42,17 +42,20 @@ const PortfolioData = [
   },
   {
     id: 2,
-    type: "youtube project",
+    type: "DigiDagang - ECommerce Web App",
     image: Image2,
-    tag: ["video"],
+    tag: ["web"],
     delayAnimation: "100",
     modalDetails: [
       {
-        project: "video",
-        client: "Videohive",
-        language: " Adobe After Effects",
-        preview: "www.videohive.net",
-        link: "https://www.videohive.net",
+        project: "Website Ecommerce",
+        client: "Personal Project",
+        language: "MongoDB, Next.js, Node.js, TailwindCSS, TypeScript",
+        preview: "Here",
+        deploy: "Here",
+        link: "https://github.com/raihank43/DigiDagang",
+        deployLink: "https://digidagang.vercel.app/",
+        description: `This is a full-stack e-commerce web application that I built using Next.js, Node.js, and MongoDB. It features user authentication,  allowing users to browse products, add them to their wishlist, and remove items from their wishlist.`,
       },
     ],
   },
