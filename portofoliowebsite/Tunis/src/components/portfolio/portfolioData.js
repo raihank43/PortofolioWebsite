@@ -1,6 +1,6 @@
 import Image1 from "../../../public/assets/img/portfolio/Timesheet/screenshot1.png";
 import Image2 from "../../../public/assets/img/portfolio/DigiDagang/screenshot1.png";
-import Image3 from "../../../public/assets/img/portfolio/project-3.jpg";
+import Image3 from "../../../public/assets/img/portfolio/Medichatrx/screenshot1.png";
 import Image4 from "../../../public/assets/img/portfolio/project-4.jpg";
 import Image5 from "../../../public/assets/img/portfolio/project-5.jpg";
 import Image6 from "../../../public/assets/img/portfolio/project-6.jpg";
@@ -61,17 +61,22 @@ const PortfolioData = [
   },
   {
     id: 3,
-    type: "slider project",
+    type: "MediChat Rx",
     image: Image3,
-    tag: [],
+    tag: ["mobile"],
     delayAnimation: "200",
     modalDetails: [
       {
-        project: "Website",
-        client: "Themeforest",
-        language: " HTML, CSS, Javascript",
-        preview: "www.envato.com",
-        link: "https://www.envato.com",
+        project: "Mobile Application",
+        client: "Final Project Hacktiv8",
+        language:
+          "MongoDB, GraphQL, React Native, Node.js, Apollo Client, Expo Location, Artificial Intelligence Google Maps API",
+        preview: "Here",
+        linkedin: "Article",
+        link: "https://github.com/orgs/Medichat-Rx/repositories",
+        linkedinLink:
+          "https://www.linkedin.com/pulse/medichatrx-tanya-keluhanmu-disini-carlos-hakim-34yjc/?trackingId=b2ldhIfPQ%2B%2BApmJHpwurdw%3D%3D",
+        description: `A Mobile App for my final project during bootcamp in Hacktiv8 built using React Native, which is a chat-based AI app where users can share health issues and receive real-time advice. It offers recommendations and comprehensive information about suitable medications, including recommendation of nearby pharmacies, and it can generate content based on user’s complaints using AI.`,
       },
     ],
   },

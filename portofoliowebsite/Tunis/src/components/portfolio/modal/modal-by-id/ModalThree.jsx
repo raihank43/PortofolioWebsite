@@ -7,8 +7,10 @@ import "slick-carousel/slick/slick-theme.css";
 // internal
 import CloseImg from "../../../../../public/assets/img/cancel.svg";
 import PortfolioData from "../../portfolioData";
-import img1 from "../../../../../public/assets/img/portfolio/project-1.jpg";
-import img2 from "../../../../../public/assets/img/portfolio/project-2.jpg";
+import img1 from "../../../../../public/assets/img/portfolio/Medichatrx/screenshot2.png";
+import img2 from "../../../../../public/assets/img/portfolio/Medichatrx/screenshot3.png";
+import img3 from "../../../../../public/assets/img/portfolio/Medichatrx/screenshot4.png";
+import img4 from "../../../../../public/assets/img/portfolio/Medichatrx/screenshot5.png";
 
 const ModalThree = ({ modalId, setGetModal }) => {
   let settings = {
@@ -23,7 +25,7 @@ const ModalThree = ({ modalId, setGetModal }) => {
     <div className="modal_portfolio">
       <div className="modal__outside" onClick={() => setGetModal(false)}></div>
       <div className="modal-wrapper">
-        <div className="modal__content">
+        <div className="modal__content scrollable-modal h-screen">
           {PortfolioData.filter((item) => item.id === modalId).map((item) => {
             //
             return (
@@ -49,22 +51,41 @@ const ModalThree = ({ modalId, setGetModal }) => {
                         </div>
                         <div className="col-12 col-sm-6 mb-2">
                           <i className="fa fa-code pr-2"></i>
-                          Language :{" "}
+                          Tech Stack :{" "}
                           <span className="ft-wt-600 uppercase">
                             {details.language}
                           </span>
                         </div>
                         <div className="col-12 col-sm-6 mb-2">
                           <i className="fa fa-external-link pr-2"></i>
-                          Preview :{" "}
+                          Repository :{" "}
                           <a
                             className="preview-link"
+                            style={{ color: "#5f61d5" }}
                             target="_blank"
                             rel="noopener noreferrer nofollow"
                             href={details.link}
                           >
                             {details.preview}
                           </a>
+                        </div>
+                        <div className="col-12 col-sm-6 mb-2">
+                          <i className="fa fa-linkedin pr-2"></i>
+                          LinkedIn :{" "}
+                          <a
+                            className="preview-link"
+                            style={{ color: "#5f61d5" }}
+                            target="_blank"
+                            rel="noopener noreferrer nofollow"
+                            href={details.linkedinLink}
+                          >
+                            {details.linkedin}
+                          </a>
+                        </div>
+
+                        <div className="mt-6 text-justify">
+                          <i className="fa fa-info pr-2"></i>
+                          Description : <p>{details.description}</p>
                         </div>
                       </div>
                     );
@@ -80,6 +101,12 @@ const ModalThree = ({ modalId, setGetModal }) => {
                     </div>
                     <div>
                       <Image src={img2} alt="portfolio project demo" />
+                    </div>
+                    <div>
+                      <Image src={img3} alt="portfolio project demo" />
+                    </div>
+                    <div>
+                      <Image src={img4} alt="portfolio project demo" />
                     </div>
                   </Slider>
                 </figure>
