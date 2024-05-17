@@ -196,6 +196,13 @@ const skillsContent = [
     skillName: "DBeaver",
     type: "others",
   },
+  {
+    skillClass: "p65",
+    imgUrl:
+      "https://yt3.ggpht.com/a/AGF-l791ySSDFwSHTYVjI0BMuuyqlFmiMutGcvcYcA=s900-c-k-c0xffffffff-no-rj-mo",
+    skillName: "Postman API",
+    type: "others",
+  },
 ];
 
 const Skills = () => {
