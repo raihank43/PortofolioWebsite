@@ -2,13 +2,28 @@ import Image from "next/image";
 import React from "react";
 import CloseImg from "../../../../../public/assets/img/cancel.svg";
 import PortfolioData from "../../portfolioData";
+import img1 from "../../../../../public/assets/img/portfolio/ShareFlow/screenshot1.png";
+import img2 from "../../../../../public/assets/img/portfolio/ShareFlow/screenshot2.png";
+import img3 from "../../../../../public/assets/img/portfolio/ShareFlow/screenshot3.png";
+import img4 from "../../../../../public/assets/img/portfolio/ShareFlow/screenshot4.jpeg";
+import img5 from "../../../../../public/assets/img/portfolio/ShareFlow/screenshot5.jpeg";
+
+import Slider from "react-slick";
 
 const ModalFive = ({ modalId, setGetModal }) => {
+  let settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    draggable: true,
+  };
   return (
     <div className="modal_portfolio">
       <div className="modal__outside" onClick={() => setGetModal(false)}></div>
       <div className="modal-wrapper">
-        <div className="modal__content">
+        <div className="modal__content scrollable-modal h-screen">
           {PortfolioData.filter((item) => item.id === modalId).map((item) => {
             //
             return (
@@ -34,16 +49,17 @@ const ModalFive = ({ modalId, setGetModal }) => {
                         </div>
                         <div className="col-12 col-sm-6 mb-2">
                           <i className="fa fa-code pr-2"></i>
-                          Language :{" "}
+                          Tech Stack :{" "}
                           <span className="ft-wt-600 uppercase">
                             {details.language}
                           </span>
                         </div>
                         <div className="col-12 col-sm-6 mb-2">
                           <i className="fa fa-external-link pr-2"></i>
-                          Preview :{" "}
+                          Repository :{" "}
                           <a
                             className="preview-link"
+                            style={{ color: "#5f61d5" }}
                             target="_blank"
                             rel="noopener noreferrer nofollow"
                             href={details.link}
@@ -51,12 +67,46 @@ const ModalFive = ({ modalId, setGetModal }) => {
                             {details.preview}
                           </a>
                         </div>
+                        <div className="col-12 col-sm-6 mb-2">
+                          <i className="fa fa-globe pr-2"></i>
+                          Deployment :{" "}
+                          <a
+                            className="preview-link"
+                            style={{ color: "#5f61d5" }}
+                            target="_blank"
+                            rel="noopener noreferrer nofollow"
+                            href={details.deployLink}
+                          >
+                            {details.deploy}
+                          </a>
+                        </div>
+
+                        <div className="mt-6 text-justify">
+                          <i className="fa fa-info pr-2"></i>
+                          Description : <p>{details.description}</p>
+                        </div>
                       </div>
                     );
                   })}
                 </div>
                 <figure className="modal__img">
-                  <Image src={item.image} alt="portfolio project demo" />
+                  <Slider {...settings}>
+                    <div>
+                      <Image src={item.image} alt="portfolio project demo" />
+                    </div>
+                    <div>
+                      <Image src={img2} alt="portfolio project demo" />
+                    </div>
+                    <div>
+                      <Image src={img3} alt="portfolio project demo" />
+                    </div>
+                    <div>
+                      <Image src={img4} alt="portfolio project demo" />
+                    </div>
+                    <div>
+                      <Image src={img5} alt="portfolio project demo" />
+                    </div>
+                  </Slider>
                 </figure>
 
                 <button
