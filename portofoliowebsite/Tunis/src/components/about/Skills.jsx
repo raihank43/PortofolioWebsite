@@ -95,6 +95,13 @@ const skillsContent = [
   {
     skillClass: "p65",
     imgUrl:
+      "https://d33wubrfki0l68.cloudfront.net/49c2be6f2607b5c12dd27f8ecc8521723447975d/f05c5/logo-small.cbbeba89.svg",
+    skillName: "NestJS",
+    type: "back_end",
+  },
+  {
+    skillClass: "p65",
+    imgUrl:
       "https://upload.wikimedia.org/wikipedia/commons/1/17/GraphQL_Logo.svg",
     skillName: "GraphQL",
     type: "back_end",
@@ -118,6 +125,13 @@ const skillsContent = [
     imgUrl:
       "https://juffalow.com/assets/images/sequelize-large-e479b9b57623a222919263004221f888.png",
     skillName: "Sequelize ORM",
+    type: "back_end",
+  },
+  {
+    skillClass: "p65",
+    imgUrl:
+      "https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_light_prisma_icon_130444.png",
+    skillName: "Prisma ORM",
     type: "back_end",
   },
   {
@@ -166,6 +180,13 @@ const skillsContent = [
     imgUrl:
       "https://cdn.changelog.com/uploads/icons/news_sources/qGw/icon_large.png?v=63692097118",
     skillName: "Vercel",
+    type: "deployment",
+  },
+  {
+    skillClass: "p65",
+    imgUrl:
+      "https://cdn.icon-icons.com/icons2/2407/PNG/512/docker_icon_146192.png",
+    skillName: "Docker",
     type: "deployment",
   },
   {
