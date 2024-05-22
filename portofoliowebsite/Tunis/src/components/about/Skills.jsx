@@ -109,6 +109,13 @@ const skillsContent = [
   {
     skillClass: "p65",
     imgUrl:
+      "https://cdn4.iconfinder.com/data/icons/redis-2/1451/Untitled-2-512.png",
+    skillName: "Redis",
+    type: "back_end",
+  },
+  {
+    skillClass: "p65",
+    imgUrl:
       "https://yt3.googleusercontent.com/qb18mOYkphbCOPiRPrvuH2Ki2KdVgVqpqiINTmLLl7UlHsgGv9--N-SvYSed_q067Pza6Z61zQ=s900-c-k-c0x00ffffff-no-rj",
     skillName: "Apollo",
     type: "back_end",

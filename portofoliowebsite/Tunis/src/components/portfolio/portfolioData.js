@@ -1,7 +1,7 @@
 import Image1 from "../../../public/assets/img/portfolio/Timesheet/screenshot1.png";
 import Image2 from "../../../public/assets/img/portfolio/DigiDagang/screenshot1.png";
 import Image3 from "../../../public/assets/img/portfolio/Medichatrx/screenshot1.png";
-import Image4 from "../../../public/assets/img/portfolio/project-4.jpg";
+import Image4 from "../../../public/assets/img/portfolio/Interactube/screenshot1.png";
 import Image5 from "../../../public/assets/img/portfolio/project-5.jpg";
 import Image6 from "../../../public/assets/img/portfolio/project-6.jpg";
 import Image7 from "../../../public/assets/img/portfolio/project-7.jpg";
@@ -82,17 +82,23 @@ const PortfolioData = [
   },
   {
     id: 4,
-    type: "local project",
+    type: "Interactube",
     image: Image4,
-    tag: ["logo", "video"],
+    tag: ["mobile"],
     delayAnimation: "0",
     modalDetails: [
       {
-        project: "video",
-        client: "Videohive",
-        language: " Adobe After Effects",
-        preview: "www.videohive.net",
-        link: "https://www.videohive.net",
+        project: "Mobile Social Media Application",
+        client: "Personal Project",
+        language:
+          "MongoDB, GraphQL, React Native, Node.js, Apollo Client, Redis",
+        preview: "Here",
+        link: "https://github.com/raihank43/InteracTube",
+        description: `InteracTube is a social media application that I built using React Native, Node.js, and MongoDB. 
+        It features user authentication and a wide range of social media features, 
+        such as posting content, liking, commenting, following other users, 
+        and searching for fellow users.
+        `,
       },
     ],
   },
