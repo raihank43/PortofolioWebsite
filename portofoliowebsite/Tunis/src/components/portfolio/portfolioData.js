@@ -115,8 +115,8 @@ const PortfolioData = [
         language: "Nestjs, ReactJS, PostgreSQL, Prisma ORM, Docker, TypeScript",
         preview: "Here",
         link: "https://github.com/raihank43/ShareFlow",
-        description: `A Document management application where users can upload documents, delete documents or share with other users, this application has authentication, RESTful API, and it is
-        built using NestJs and Prisma, also my first fullstack project that use docker for deployment
+        description: `A Document management application where users can upload documents, download documents, delete documents or share with other users, this application has authentication, filtering and sort, RESTful API, and it is
+        built using NestJs, Prisma, and React, it is also my first fullstack project that use docker for deployment
         `,
       },
     ],
