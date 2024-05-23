@@ -7,6 +7,7 @@ import Image6 from "../../../public/assets/img/portfolio/KoneksiON/screenshot1.p
 import Image7 from "../../../public/assets/img/portfolio/CircleKita/screenshot1.png";
 import Image8 from "../../../public/assets/img/portfolio/GoPotik/screenshot1.png";
 import Image9 from "../../../public/assets/img/portfolio/TrawlBens/screenshot1.png";
+import Image10 from "../../../public/assets/img/portfolio/Bookies/screenshot1.png";
 
 const PortfolioData = [
   {
@@ -203,6 +204,23 @@ const PortfolioData = [
         language: "Figma",
         preview: "Figma Link",
         link: "https://www.figma.com/design/sVO45on6M9Qw06mwtRY1Li/DESIGN-WEB-TRAWLBENS?node-id=0-1&t=tkipF5jiduFmVCY3-0",
+      },
+    ],
+  },
+  {
+    id: 10,
+    type: "Bookies Mockup Design",
+    image: Image10,
+    tag: ["mockup"],
+    delayAnimation: "200",
+    modalDetails: [
+      {
+        project: "UI/UX Mockup Mobile Design",
+        client: "Personal Project on PRODES ITS",
+        language: "Figma",
+        preview: "Figma Link",
+        link: "https://www.figma.com/file/4vX6z1O0h8mQbV1m6XQg5v/Design-Mobile-App?node-id=0%3A1",
+        description: `A mobile application design for book lovers. This design was made during my studies on Design and Online Business on PRODES ITS. It features a user-friendly interface for users to browse books, read book reviews, and purchase books.`,
       },
     ],
   },
