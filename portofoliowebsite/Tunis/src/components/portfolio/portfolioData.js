@@ -94,7 +94,7 @@ const PortfolioData = [
           "MongoDB, GraphQL, React Native, Node.js, Apollo Client, Redis",
         preview: "Here",
         link: "https://github.com/raihank43/InteracTube",
-        description: `InteracTube is a social media application that I built using React Native, Node.js, and MongoDB. 
+        description: `InteracTube is a mobile social media application that I built using React Native, Node.js, and MongoDB. 
         It features user authentication and a wide range of social media features, 
         such as posting content, liking, commenting, following other users, 
         and searching for fellow users.
