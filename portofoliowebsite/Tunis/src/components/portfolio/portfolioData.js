@@ -3,7 +3,7 @@ import Image2 from "../../../public/assets/img/portfolio/DigiDagang/screenshot1.
 import Image3 from "../../../public/assets/img/portfolio/Medichatrx/screenshot1.png";
 import Image4 from "../../../public/assets/img/portfolio/Interactube/screenshot1.png";
 import Image5 from "../../../public/assets/img/portfolio/ShareFlow/screenshot1.png";
-import Image6 from "../../../public/assets/img/portfolio/project-6.jpg";
+import Image6 from "../../../public/assets/img/portfolio/KoneksiON/screenshot1.png";
 import Image7 from "../../../public/assets/img/portfolio/project-7.jpg";
 import Image8 from "../../../public/assets/img/portfolio/project-8.jpg";
 import Image9 from "../../../public/assets/img/portfolio/project-9.jpg";
@@ -123,17 +123,25 @@ const PortfolioData = [
   },
   {
     id: 6,
-    type: "mockup project",
+    type: "KoneksiON",
     image: Image6,
-    tag: ["logo", "mockup"],
+    tag: ["web"],
     delayAnimation: "200",
     modalDetails: [
       {
-        project: "Website",
-        client: "Themeforest",
-        language: "HTML, CSS, Javascript",
-        preview: "www.pexels.com",
-        link: "https://www.pexels.com",
+        project: "Web Application",
+        client: "Individual Project in Hacktiv8",
+        language: "Nodejs, Express, Socket.io, PostgreSQL, Sequelize ORM, ReactJS, RESTful API",
+        preview: "Here",
+        link: "https://github.com/raihank43/IP-RMT46",
+        description: `A real-time, chat-based social media application for my individual project, 
+        it serves as my first fullstack application that uses client-server architecture, RESTful API and Test-Driven Development (TDD).
+         In this application Users can register with Google OAuth, 
+         chat with everyone or between users in real-time, send images, 
+         update their profiles, delete messages, 
+         and use commands like “/gif” to generate a gif and “/definitions” to get word definitions. 
+         Users can also chat with AI chatbot on public group using "/chatai" commands, all powered by third-party APIs.
+        `,
       },
     ],
   },
