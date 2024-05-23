@@ -5,7 +5,7 @@ import Image4 from "../../../public/assets/img/portfolio/Interactube/screenshot1
 import Image5 from "../../../public/assets/img/portfolio/ShareFlow/screenshot1.png";
 import Image6 from "../../../public/assets/img/portfolio/KoneksiON/screenshot1.png";
 import Image7 from "../../../public/assets/img/portfolio/CircleKita/screenshot1.png";
-import Image8 from "../../../public/assets/img/portfolio/project-8.jpg";
+import Image8 from "../../../public/assets/img/portfolio/GoPotik/screenshot1.png";
 import Image9 from "../../../public/assets/img/portfolio/project-9.jpg";
 
 const PortfolioData = [
@@ -131,7 +131,8 @@ const PortfolioData = [
       {
         project: "Web Application",
         client: "Individual Project in Hacktiv8",
-        language: "Nodejs, Express, Socket.io, PostgreSQL, Sequelize ORM, ReactJS, RESTful API",
+        language:
+          "Nodejs, Express, Socket.io, PostgreSQL, Sequelize ORM, ReactJS, RESTful API",
         preview: "Here",
         link: "https://github.com/raihank43/IP-RMT46",
         description: `A real-time, chat-based social media application for my individual project, 
@@ -155,28 +156,37 @@ const PortfolioData = [
       {
         project: "Web Application",
         client: "Pair Project Phase 1 Hacktiv8",
-        language: "Node.js, Express, PostgreSQL, EJS, Sequelize ORM, Bcrypt, Session",
+        language:
+          "Node.js, Express, PostgreSQL, EJS, Sequelize ORM, Bcrypt, Session",
         preview: "Here",
         link: "https://www.facebook.com/ibthemes",
         description: `
         Social Media platform for my Pair Project. Using a monolith architecture as I'm learning back end and front end web development. It enables users to interact, share content, upload image, liking posts, set up profiles and see other people's profile. This was Developed with NodeJS, ExpressJS, PostgreSQL, Sequelize, and EJS. And it utilizes bcrypt for user account's password encryption and session for authentication. it offers a user-friendly interface for users to engage with each other and discover interesting content.
-        `
+        `,
       },
     ],
   },
   {
     id: 8,
-    type: "dribble project",
+    type: "GoPotik",
     image: Image8,
-    tag: ["graphic design"],
+    tag: ["web"],
     delayAnimation: "100",
     modalDetails: [
       {
-        project: "Website",
-        client: "Dribbble",
+        project: "Web Application",
+        client: "Hackaton Project Phase 0 Hacktiv8",
         language: "HTML, CSS, Javascript",
-        preview: "www.dribbble.com",
-        link: "https://dribbble.com/ib-themes",
+        preview: "Here",
+        link: "https://github.com/raihank43/Gopotik",
+        deploy: "Here",
+        deployLink: "https://hackim18.github.io/Gopotik/",
+        description: `
+        A web platform designed for ease of online medicine purchases. This was my first group project that I and my 3 other friends made
+        for Hackathon on Hacktiv8 Bootcamp. 
+        I contributed in UI design, added cart functionalities, 
+        and managed dynamic stock updates using plain  HTML, CSS, and JavaScript DOM
+        `,
       },
     ],
   },
