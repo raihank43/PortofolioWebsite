@@ -6,7 +6,7 @@ import Image5 from "../../../public/assets/img/portfolio/ShareFlow/screenshot1.p
 import Image6 from "../../../public/assets/img/portfolio/KoneksiON/screenshot1.png";
 import Image7 from "../../../public/assets/img/portfolio/CircleKita/screenshot1.png";
 import Image8 from "../../../public/assets/img/portfolio/GoPotik/screenshot1.png";
-import Image9 from "../../../public/assets/img/portfolio/project-9.jpg";
+import Image9 from "../../../public/assets/img/portfolio/TrawlBens/screenshot1.png";
 
 const PortfolioData = [
   {
@@ -192,17 +192,17 @@ const PortfolioData = [
   },
   {
     id: 9,
-    type: "behence project",
+    type: "TrawlBens Mockup Design",
     image: Image9,
-    tag: ["graphic design", "mockup"],
+    tag: ["mockup"],
     delayAnimation: "200",
     modalDetails: [
       {
-        project: "Website",
-        client: "Behance",
-        language: "HTML, CSS, Javascript",
-        preview: "www.behance.com",
-        link: "https://www.behance.net/ib-themes",
+        project: "UI/UX Mockup Web Design",
+        client: "TrawlBens",
+        language: "Figma",
+        preview: "Figma Link",
+        link: "https://www.figma.com/design/sVO45on6M9Qw06mwtRY1Li/DESIGN-WEB-TRAWLBENS?node-id=0-1&t=tkipF5jiduFmVCY3-0",
       },
     ],
   },
