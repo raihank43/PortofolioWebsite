@@ -1,5 +1,6 @@
 import { useState } from "react";
 import img1 from "../../public/assets/img/blog/blog-post-1.jpg";
+import javascriptroadmap from "../../public/assets/img/blog/javascript-roadmap.png";
 import img2 from "../../public/assets/img/blog/blog-post-2.jpg";
 import img3 from "../../public/assets/img/blog/blog-post-3.jpg";
 import img4 from "../../public/assets/img/blog/blog-post-4.jpg";
@@ -10,99 +11,31 @@ const AllBlogData = () => {
   const blogsData = [
     {
       id: 1,
-      img: img1,
-      title: "How to Own Your Audience by Creating an Email List",
-      commentor: "Rio ",
-      date: "21 April 2022",
-      tag: `wordpress, business, economy, design`,
+      img: javascriptroadmap,
+      title: "The Roadmap of Learning Fundamental JavaScript",
+      commentor: "Raihan",
+      date: "24 May 2024",
+      tag: `programming, javascript, computer, learning`,
       description1:
-        "Tomfoolery crikey bits and bobs brilliant bamboozled down the pub amongst brolly hanky panky, cack bonnet arse over tit burke bugger all mate bodge. cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Suspendisse interdum consectetur libero id faucibu nisl. Lacus vel facilisis volutpat est velit egestas.",
+        "JavaScript is the backbone of web development, powering the dynamic behavior on most websites and web applications. For aspiring developers, understanding the fundamentals of JavaScript is crucial. This roadmap will guide you through the key concepts and resources to help you become proficient in JavaScript.",
       description2:
-        "Most photographers find it hard to see interesting pictures in places in which they are most familiar. A trip somewhere new seems always exactly what our photography needed, as shooting away from home consistently inspires us to new artistic heights. ",
+        "Step 1: Grasp the Basics: Begin with the basics of JavaScript syntax and operations. Familiarize yourself with variables, data types, and operators. Variables are the named storage for data, and understanding var, let, and const will help you manage data effectively.",
       description3:
-        "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.",
+        "Step 2: Dive into Functions and Scopes: Functions are reusable blocks of code that perform a specific task. Learn how to create functions, pass arguments, and return values. Scopes define the visibility of variables in different parts of your code. Understanding global and local scopes will help you write efficient and bug-free code.",
       description4:
-        "Riosum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    },
-    {
-      id: 2,
-      img: img2,
-      title: "Top 10 Toolkits for Deep Learning in 2022",
-      commentor: "Santhan ",
-      date: "14 January 2022",
-      tag: `wordpress, business, economy, design`,
-      description1:
-        "Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      description2:
-        "If you’ve been waiting for an invitation, this calligraphy is it. Commissioned by Notebook hand-lettered design for a poster. Quote is Notebook Building 8 VP’s Regina Dugan—and mine. ",
-      description3:
-        "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.",
-      description4:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    },
-    {
-      id: 3,
-      img: img3,
-      title: "Everything You Need to Know About Web Accessibility",
-      commentor: "steve ",
-      date: "9 January 2020",
-      tag: `wordpress, business, economy, design`,
-      description1:
-        "Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      description2:
-        "Most photographers find it hard to see interesting pictures in places in which they are most familiar. A trip somewhere new seems always exactly what our photography needed, as shooting away from home consistently inspires us to new artistic heights. ",
-      description3:
-        "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.",
-      description4:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    },
-    {
-      id: 4,
-      img: img4,
-      title: "How to Inject Humor & Comedy Into Your Brand",
-      commentor: "Beker ",
-      date: "15 March 2022",
-      tag: `wordpress, business, economy, design`,
-      description1:
-        "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Suspendisse interdum consectetur libero id faucibu nisl. Lacus vel facilisis volutpat est velit egestas",
-      description2:
-        "Most photographers find it hard to see interesting pictures in places in which they are most familiar. A trip somewhere new seems always exactly what our photography needed, as shooting away from home consistently inspires us to new artistic heights. ",
-      description3:
-        "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.",
-      description4:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    },
-    {
-      id: 5,
-      img: img5,
-      title: "Women in Web Design: How To Achieve Success",
-      commentor: "Janntul ",
-      date: "9 January 2021",
-      tag: `wordpress, business, economy, design`,
-      description1:
-        "Jorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      description2:
-        "Most photographers find it hard to see interesting pictures in places in which they are most familiar. A trip somewhere new seems always exactly what our photography needed, as shooting away from home consistently inspires us to new artistic heights. ",
-      description3:
-        "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.",
-      description4:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    },
-    {
-      id: 6,
-      img: img6,
-      title: "Evergreen versus topical content: An overview",
-      commentor: "Hasan ",
-      date: "9 January 2022",
-      tag: `wordpress, business, economy, design`,
-      description1:
-        "Still ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      description2:
-        "Most photographers find it hard to see interesting pictures in places in which they are most familiar. A trip somewhere new seems always exactly what our photography needed, as shooting away from home consistently inspires us to new artistic heights. ",
-      description3:
-        "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.",
-      description4:
-        "Still ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "Step 3: Understand the JavaScript Engine: Discover how the JavaScript engine works under the hood. This includes the execution context, hoisting, and the role of the JavaScript engine in interpreting your code ",
+      description5:
+        "Step 4: Master ‘this’ Keyword: The this keyword is a fundamental concept in JavaScript that refers to the object it belongs to. It’s crucial in the context of object-oriented programming and function invocation.",
+      description6:
+        "Step 5: Explore Objects and Prototypes: JavaScript is prototype-based, meaning that objects inherit properties and methods from a prototype. Delve into object creation, prototypal inheritance, and property descriptors.",
+      description7:
+        "Step 6: Learn Asynchronous JavaScript: Asynchronous JavaScript, including callbacks, promises, and async/await, is vital for handling operations like fetching data from a server. Understanding these concepts will allow you to write non-blocking code.",
+      description7:
+        "Step 7: The Document Object Model (DOM): The DOM is an API for HTML and XML documents that provides a structural representation of the document. Learn how to manipulate the DOM to dynamically change the content, structure, and style of a webpage3.",
+      description8:
+        "Step 8: Advanced Concepts: Once you have a solid foundation, move on to advanced topics such as closures, event bubbling, and template literals. These concepts will enhance your ability to write efficient and powerful JavaScript code.",
+      description9:
+        "Learning JavaScript is a journey of continuous improvement. By following this roadmap and utilizing the resources provided, you’ll be well on your way to mastering the fundamentals of JavaScript and becoming a proficient web developer.",
     },
   ];
 

@@ -102,6 +102,13 @@ const Blog = () => {
                       </div>
                       <p>{singleData?.description3}</p>
                       <p>{singleData?.description4}</p>
+                      <p>{singleData?.description5}</p>
+                      <p>{singleData?.description6}</p>
+                      <p>{singleData?.description7}</p>
+                      <p>{singleData?.description8}</p>
+                      <p>{singleData?.description9}</p>
+                      <p>{singleData?.description10}</p>
+                      
                     </div>
                     {/* Article Content Ends */}
                   </article>
