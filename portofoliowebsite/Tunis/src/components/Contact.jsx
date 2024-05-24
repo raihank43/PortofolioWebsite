@@ -4,52 +4,40 @@ import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const Contact = () => {
-  const form = useRef();
-
   const sendEmail = (e) => {
     e.preventDefault();
     emailjs
       .sendForm(
-        "service_n4mkhz9",
-        "template_ugoztxr",
-        form.current,
-        "user_vYmDSd9PwIuRXUQEDjYwN"
+        process.env.NEXT_PUBLIC_EMAIL_SERVICES,
+        process.env.NEXT_PUBLIC_EMAIL_TEMPLATES,
+        e.target,
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
       )
       .then(
         (result) => {
-          console.log(result)
-          toast.success("Message Sent Successfully!", {
-            position: "top-right",
-            autoClose: 2000,
-            hideProgressBar: false,
-            closeOnClick: true,
-            pauseOnHover: true,
-            draggable: true,
-            progress: undefined,
-          });
-          document.getElementById("myForm").reset();
+          console.log(result.text);
+          toast.success("Your message has been sent successfully!");
         },
         (error) => {
-          toast.error("Ops Message Not Sent!", {
-            position: "top-right",
-            autoClose: 2000,
-            hideProgressBar: false,
-            closeOnClick: true,
-            pauseOnHover: true,
-            draggable: true,
-            progress: undefined,
-          });
+          console.log(error.text);
+          toast.error("There was an error sending your message!");
         }
       );
+    e.target.reset();
   };
 
   return (
     <>
-      <form id="myForm" className="contactform" ref={form} onSubmit={sendEmail}>
+      <form id="myForm" className="contactform" onSubmit={sendEmail}>
         <div className="row">
           <div className="col-12 col-md-6">
             <div className="form-group">
-              <input type="text" name="name" placeholder="YOUR NAME" required />
+              <input
+                type="text"
+                name="from_name"
+                placeholder="YOUR NAME"
+                required
+              />
             </div>
           </div>
           {/* End .col */}
