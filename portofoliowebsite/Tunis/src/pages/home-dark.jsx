@@ -116,8 +116,9 @@ export default function HomeDark() {
                     <p className="open-sans-font mb-4">
                       Feel free to get in touch with me. I am always open to
                       discussing new projects, creative ideas or opportunities
-                      to be part of your visions. You can contact me directly through this
-                      form or by email and my other social media accounts.
+                      to be part of your visions. You can contact me directly
+                      through this form or by email and my other social media
+                      accounts.
                     </p>
                     <Address />
                     {/* End Address */}
