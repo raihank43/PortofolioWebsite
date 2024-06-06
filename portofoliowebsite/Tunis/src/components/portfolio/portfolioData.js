@@ -136,6 +136,8 @@ const PortfolioData = [
           "Nodejs, Express, Socket.io, PostgreSQL, Sequelize ORM, ReactJS, RESTful API",
         preview: "Here",
         link: "https://github.com/raihank43/IP-RMT46",
+        deploy: "Here",
+        deployLink: "https://koneksi-on.web.app/",
         description: `A real-time, chat-based social media application for my individual project, 
         it serves as my first fullstack application that uses client-server architecture, RESTful API and Test-Driven Development (TDD).
          In this application Users can register with Google OAuth, 
