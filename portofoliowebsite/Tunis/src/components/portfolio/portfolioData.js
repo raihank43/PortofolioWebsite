@@ -77,7 +77,16 @@ const PortfolioData = [
         link: "https://github.com/orgs/Medichat-Rx/repositories",
         linkedinLink:
           "https://www.linkedin.com/pulse/medichatrx-tanya-keluhanmu-disini-carlos-hakim-34yjc/?trackingId=b2ldhIfPQ%2B%2BApmJHpwurdw%3D%3D",
-        description: `A Mobile App for my final project during bootcamp in Hacktiv8 built using React Native, which is a chat-based AI app where users can share health issues and receive real-time advice. It offers recommendations and comprehensive information about suitable medications, including recommendation of nearby pharmacies, and it can generate content based on user’s complaints using AI.`,
+        description: `As the team leader of a group of four, I spearheaded the development chat-based AI mobile app where users can share health issues and receive real-time advice. It offers information on medications, including recommendation of nearby pharmacies, and it can generate content based on user’s complaints using AI.
+
+Responsibilities and Achievements:
+
+- Led the project from conception to completion, ensuring effective collaboration and communication within the team.
+- Designed application flow to ensure consistency and make it easier for users to learn and use the application
+- Developed features to store user complaints functionality to help AI understand more about user needs and symptoms
+- Developed the backend chat AI functionality that powers real-time advice based on user input.
+- Designed intuitive frontend interfaces to enhance user experience and engagement.
+- Successfully delivered the project within the stipulated timeline, demonstrating my ability to manage time and resources effectively.`,
       },
     ],
   },

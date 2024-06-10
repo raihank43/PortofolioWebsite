@@ -85,7 +85,7 @@ const ModalThree = ({ modalId, setGetModal }) => {
 
                         <div className="mt-6 text-justify">
                           <i className="fa fa-info pr-2"></i>
-                          Description : <p>{details.description}</p>
+                          Description : <p className="whitespace-pre-line">{details.description}</p>
                         </div>
                       </div>
                     );

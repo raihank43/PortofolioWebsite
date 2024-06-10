@@ -26,17 +26,21 @@ const PersonalInfo = () => {
         Next.js, and React Native.
       </p>
       <p style={{ textAlign: "justify" }}>
-        With various knowledge of design and a background in the creative
-        industry. I decided to transition into a Fullstack Developer which was
-        driven by my lifelong passion for technology. My experience in design
-        has provided me with a unique perspective on user experience, which I
-        leverage when developing front-end interfaces. On the other hand, my
-        interest in back-end development allows me to build robust and efficient
-        systems. This combination of skills positions me uniquely as a
-        full-stack developer, capable of overseeing projects from conception to
-        completion. I’m eager to learn, open to new challenges, and love to
-        collaborate with like-minded individuals to create visually appealing
-        content and innovative digital solutions.
+        Emerging from a vibrant background in the creative and technical
+        industry. I embarked on my journey as a Fullstack Developer, a path
+        ignited by my enduring fascination with technology and solidified by my
+        graduation from the Hacktiv8 Fullstack JavaScript Immersive Program. My
+        experience in the creative industry has endowed me with a unique lens on
+        user experience, which I harness in crafting intuitive front-end
+        interfaces. Simultaneously, my technical background has empowered me to
+        engineer an efficient and dependable back-end systems. This fusion of
+        skills uniquely equips me as a full-stack developer, adept at steering
+        projects from inception to fruition. I am a perpetual learner, always
+        eager to absorb new knowledge and innovate in the most creative ways. My
+        strong analytical and problem-solving skills are key to my success in
+        this role. I always ready to embrace new challenges, and thrive on
+        collaborative environments, working with peers to produce innovative
+        digital solutions that meet user needs.
       </p>
     </div>
   );
